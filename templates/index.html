@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hands-Free Job Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hands-Free Job Assistant</h1>
+        <button id="start-voice">🎙️ Start Voice Interaction</button>
+        <div id="job-results"></div>
+
+        <form id="apply-form" enctype="multipart/form-data">
+            <input type="file" name="resume" required>
+            <input type="text" name="job_id" placeholder="Job ID" required>
+            <button type="submit">Apply</button>
+        </form>
+
+        <div id="application-result"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

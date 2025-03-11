@@ -1,0 +1,18 @@
+# templates/results.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>ATS Scoring and Analysis</h1>
+        <div class="ats-result">
+            <pre>{{ result }}</pre>
+        </div>
+        <a href="{{ url_for('home') }}">Go Back</a>
+    </div>
+</body>
+</html>
